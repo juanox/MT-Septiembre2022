@@ -1,8 +1,6 @@
 # Proyecto de Memoria de Título-Septiembre 2022
 
-* C++ _Lenguaje usado_
-
-* El análisis y la comparación de secuencias genómicas es un área de investigación que va de la mano con la implementación de nuevos métodos capaces de lograr la computación de conjuntos de datos cada vez más masivos. Por esta razón, existe le necesidad de implementar y evaluar algoritmos y estructuras de datos que soporten la comparación de la información genómica de una manera más eficiente. En este contexto, se evalúa la implementación del uso de sketches, que son estructuras de datos probabilísticas con la ventaja de ser más eficientes que las estructuras convencionales. Los sketches aceptan consultas rápidas con baja complejidad lineal y espacio sublineal, no obstante, están sujetos a un error de estimación.
+El análisis y la comparación de secuencias genómicas es un área de investigación que va de la mano con la implementación de nuevos métodos capaces de lograr la computación de conjuntos de datos cada vez más masivos. Por esta razón, existe le necesidad de implementar y evaluar algoritmos y estructuras de datos que soporten la comparación de la información genómica de una manera más eficiente. En este contexto, se evalúa la implementación del uso de sketches, que son estructuras de datos probabilísticas con la ventaja de ser más eficientes que las estructuras convencionales. Los sketches aceptan consultas rápidas con baja complejidad lineal y espacio sublineal, no obstante, están sujetos a un error de estimación.
 
 El trabajo [9], en el cual está basada esta memoria de título propone un método de estimación de la Entropía empírica de Shannon, sobre tráfico de flujo datos en redes. El método utiliza algoritmos basados en sketches, para optimizar el uso de los recursos, y el cual se implementa sobre una arquitectura de hardware especialmente diseñada para el método de estimación de la Entropía de Shannon.
 
