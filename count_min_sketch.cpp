@@ -13,18 +13,7 @@
 #endif
 
 using namespace std;
-/**
-   Class definition for CountMinSketch.
-   public operations:
-   // overloaded updates
-   void update(int item, int c);
-   void update(char *item, int c);
-   // overloaded estimates
-   unsigned int estimate(int item);
-   unsigned int estimate(char *item);
-**/
-// CountMinSketch constructor
-// w y d
+
 CountMinSketch::CountMinSketch(int width, int depth){
     w = width;
     d = depth;
@@ -202,7 +191,6 @@ void CountMinSketch::genajbj(int** hashes, int i){
 }
 
 // generates a hash value for a string
-// same as djb2 hash function
 unsigned int CountMinSketch::hashstr(const std::string &str){
     std::size_t hash = std::hash<std::string>{}(str);
     return hash;
