@@ -6,13 +6,13 @@ Esta memoria de título presenta la implementación y evaluación de estimación
 Network Entropy Estimation Using Sketches" de junio de 2021. La métrica de distancia es evaluada en el contexto de la comparación de similitud entre distintos conjuntos de secuencias genómicas, para lo cual se realiza una búsqueda de los parámetros óptimos mediante la experimentación y el análisis de resultados. Los resultados obtenidos son positivos, por un lado, en relación con la precisión de estimación de la métrica, y también en cuanto al uso de recursos de memoria utilizados.
 ## Autor
 Juan Albornoz
-##Requisitos y compilación
-###Pre-requisitos
+## Requisitos y compilación
+### Pre-requisitos
 Compilador gcc/g++ y Python >= 3.7
 El proyecto fue corrido en Ubuntu 20.04.4 LTS (GNU/Linux 5.15.90.1-microsoft-standard-WSL2 x86_64), pero puede ser compilado y ejecutado análogamente desde windows mediante, por ejemplo, el paquete MinGW.
-###Compilación
+### Compilación
 g++ -o estimacionJSD est_JSD.cpp count_min_sketch.cpp PQ.cpp hll_sketch.h
-###Ejecución y parámetros
+### Ejecución y parámetros
 ./estimacionJSD genoma1.fna genoma2.fna k_lenght p_bits pq_height pq_width cu_width cu_depth
 *k_length: Largo k de la de la subcadena contenida dentro del conjunto de todos los k-mers en una secuenciación genómica. En el contexto de esta memoria se utilizan secuencias de k-mer de largo 10 y 15, esto es, k=10 y k=15.
 *p_bits: Parámetro de precisión del HyperLogLog sketch, y se relaciona a la dimensión del vector del sketch involucrado en el algoritmo de estimación de cardinalidad.
