@@ -9,7 +9,7 @@ Juan Albornoz
 ### Pre-requisitos
 * Compilador gcc/g++ y Python >= 3.7
 * El proyecto fue corrido en Ubuntu 20.04.4 LTS (GNU/Linux 5.15.90.1-microsoft-standard-WSL2 x86_64), pero puede ser compilado y ejecutado análogamente desde windows mediante, por ejemplo, el paquete MinGW.
-* Hardware sobre el cual se raelizaron las ejecuciones: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz | 8.00 GB RAM | Windows 11 Home x64.
+* Hardware sobre el cual se realizaron las ejecuciones: 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz | 8.00 GB RAM | Windows 11 Home x64.
 ### Compilación
 g++ -o estimacionJSD est_JSD.cpp count_min_sketch.cpp PQ.cpp hll_sketch.h
 ### Ejecución y parámetros
