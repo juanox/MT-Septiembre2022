@@ -19,5 +19,5 @@ g++ -o estimacionJSD est_JSD.cpp count_min_sketch.cpp PQ.cpp hll_sketch.h
 * ***p_bits:*** Parámetro de precisión del HyperLogLog sketch, y se relaciona a la dimensión del vector involucrado en el algoritmo de estimación de cardinalidad (probados los parámetros de precisión 11, 12 y 13).
 * ***pq_height:*** Parámetro de precisión del sketch de la cola de prioridad de las secuencias más frecuentes. (probados 3, 4, 5, 6)
 * ***pq_width:*** Parámetro de precisión del sketch de la cola de prioridad de las secuencias más frecuentes. (probados 2, 3, 4, 5)
-* ***cu_width:*** Parámetro de precisión del algoritmo estimador de frecuencias CountMin-Conservative Update. (probados 11, 12)
-* ***cu_depth:*** Parámetro de precisión del algoritmo estimador de frecuencias CountMin-Conservative Update. (probados 2, 3)
+* ***cu_width:*** Parámetro de precisión del sketch del algoritmo estimador de frecuencias CountMin-Conservative Update. (probados 11, 12)
+* ***cu_depth:*** Parámetro de precisión del sketch del algoritmo estimador de frecuencias CountMin-Conservative Update. (probados 2, 3)
