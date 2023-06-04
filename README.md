@@ -13,11 +13,11 @@ Juan Albornoz
 ### Compilación
 g++ -o estimacionJSD est_JSD.cpp count_min_sketch.cpp PQ.cpp hll_sketch.h
 ### Ejecución y parámetros
-./estimacionJSD genoma1.fna genoma2.fna k_lenght p_bits pq_height pq_width cu_width cu_depth
+./estimacionJSD ***genoma1.fna genoma2.fna k_lenght p_bits pq_height pq_width cu_width cu_depth***
 
-* k_length: Largo k de la de la subcadena presente dentro del conjunto de todos los k-mers de una secuenciación genómica completa. En el contexto de esta memoria se utilizan secuencias de k-mer de largo 10 y 15, esto es, k=10 y k=15.
-* p_bits: Parámetro de precisión del HyperLogLog sketch, y se relaciona a la dimensión del vector involucrado en el algoritmo de estimación de cardinalidad (probados los parámetros de precisión 11, 12 y 13).
-* pq_height: Parámetro de precisión del sketch de la cola de prioridad de las secuencias más frecuentes. (probados 3, 4, 5, 6)
-* pq_width: Parámetro de precisión del sketch de la cola de prioridad de las secuencias más frecuentes. (probados 2, 3, 4, 5)
-* cu_width: Parámetro de precisión del algoritmo estimador de frecuencias CountMin-Conservative Update. (probados 11, 12)
-* cu_depth: Parámetro de precisión del algoritmo estimador de frecuencias CountMin-Conservative Update. (probados 2, 3)
+* ***k_length:*** Largo k de la de la subcadena presente dentro del conjunto de todos los k-mers de una secuenciación genómica completa. En el contexto de esta memoria se utilizan secuencias de k-mer de largo 10 y 15, esto es, k=10 y k=15.
+* ***p_bits:*** Parámetro de precisión del HyperLogLog sketch, y se relaciona a la dimensión del vector involucrado en el algoritmo de estimación de cardinalidad (probados los parámetros de precisión 11, 12 y 13).
+* ***pq_height:*** Parámetro de precisión del sketch de la cola de prioridad de las secuencias más frecuentes. (probados 3, 4, 5, 6)
+* ***pq_width:*** Parámetro de precisión del sketch de la cola de prioridad de las secuencias más frecuentes. (probados 2, 3, 4, 5)
+* ***cu_width:*** Parámetro de precisión del algoritmo estimador de frecuencias CountMin-Conservative Update. (probados 11, 12)
+* ***cu_depth:*** Parámetro de precisión del algoritmo estimador de frecuencias CountMin-Conservative Update. (probados 2, 3)
